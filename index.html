@@ -8,123 +8,149 @@
     <title>Document</title>
     <style>
         /* 顶部栏开始 */
-        .w1000{
+        .w1000 {
             width: 1000px;
             margin: 0 auto;
 
         }
-        body{
+
+        body {
+            font-size: 18px;
             color: #666;
             font: normal normal 16px/1 "微软雅黑";
         }
-        .clearfix:after{
+
+        .clearfix:after {
             content: ".";
             display: block;
             height: 0;
             clear: both;
             visibility: hidden;
         }
-        .top{
+
+        .top {
             height: 29px;
             line-height: 29px;
             border: 1px solid #e9e9e9;
             font-size: 14px;
         }
-        .top .fl li{
+
+        .top .fl li {
             display: inline;
             margin-right: 18px;
         }
-        .top .fr li{
+
+        .top .fr li {
             display: inline;
             margin-right: 18px;
             float: left;
         }
-        .top .fl .icon-xtb{
+
+        .top .fl .icon-xtb {
             width: 20px;
             height: 20px;
             vertical-align: middle;
             display: inline-block;
             background: url("./images/index-sp1.png") no-repeat -5px -5px;
         }
-        .icon-wx, .icon-qq, .icon-wb, .icon-tb{
+
+        .icon-wx,
+        .icon-qq,
+        .icon-wb,
+        .icon-tb {
             width: 18px;
             height: 18px;
             vertical-align: middle;
             display: inline-block;
             background: url("./images/index-sp1.png") no-repeat -6px -33px;
         }
-        .top{
-    height: 29px;
-    
-    line-height: 29px;
-    border-bottom: 1px solid #e9e9e9;
-    font-size: 14px;
-}
-.top .fl li{
-    float: left;
-    margin-right: 18px;
-}
-.top .fr li{
-    float: left;
-    margin-right: 18px;
-}
-.top .fl .icon-hotline{
-   
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    
-    vertical-align: middle;
-   
-    background: url("./images/index-sp1.png") no-repeat -5px -5px;
-}
 
-.icon-wx, .icon-qq, .icon-wb, .icon-tb{
-   
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    vertical-align: middle;
-    background: url("./images/index-sp1.png") no-repeat -5px -5px;
-}
-.icon-wx{
-    background-position: -6px -36px;
-}
-.icon-wx:hover{
-    background-position: -47px -36px;
-}
+        .top {
+            height: 29px;
 
-.icon-qq{
-    background-position: -6px -64px;
-}
-.icon-qq:hover{
-    background-position: -47px -64px;
-}
+            line-height: 29px;
+            border-bottom: 1px solid #e9e9e9;
+            font-size: 14px;
+        }
 
-.icon-wb{
-    background-position: -6px -94px;
-}
-.icon-wb:hover{
-    background-position: -47px -94px;
-}
+        .top .fl li {
+            float: left;
+            margin-right: 18px;
+        }
 
-.icon-tb{
-    background-position: -6px -124px;
-}
-.icon-tb:hover{
-    background-position: -47px -124px;
-}
-.fr li a{
-    color: #666;
-}
-.top .fr .bk{
-    border-right: 1px solid #e9e9e9;
-    border-left: 1px solid #e9e9e9;
-    width: 5px;
-    height: 5px;
-    padding: 0 13px;
-}
+        .top .fr li {
+            float: left;
+            margin-right: 18px;
+        }
+
+        .top .fl .icon-hotline {
+
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+
+            vertical-align: middle;
+
+            background: url("./images/index-sp1.png") no-repeat -5px -5px;
+        }
+
+        .icon-wx,
+        .icon-qq,
+        .icon-wb,
+        .icon-tb {
+
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            background: url("./images/index-sp1.png") no-repeat -5px -5px;
+        }
+
+        .icon-wx {
+            background-position: -6px -36px;
+        }
+
+        .icon-wx:hover {
+            background-position: -47px -36px;
+        }
+
+        .icon-qq {
+            background-position: -6px -64px;
+        }
+
+        .icon-qq:hover {
+            background-position: -47px -64px;
+
+        }
+
+        .icon-wb {
+            background-position: -6px -94px;
+        }
+
+        .icon-wb:hover {
+            background-position: -47px -94px;
+        }
+
+        .icon-tb {
+            background-position: -6px -124px;
+        }
+
+        .icon-tb:hover {
+            background-position: -47px -124px;
+        }
+
+        .fr li a {
+            color: #666;
+        }
+
+        .top .fr .bk {
+            border-right: 1px solid #e9e9e9;
+            border-left: 1px solid #e9e9e9;
+            width: 5px;
+            height: 5px;
+            padding: 0 13px;
+        }
 
         /* 顶部栏结束 */
         /* TOP开始 */
@@ -333,7 +359,73 @@
 
         /* 稳定收益结束 */
 
-
+        /* 新闻咨询开始 */
+        .newsAndProblem{
+           /* border: 1px solid red; */
+           margin-top: 60px;
+           height: 420px;
+       }
+       .newsAndProblem h3{
+           font-size: 24px;
+           font-weight: bold;
+           text-indent: -8px;
+       }
+       .newsAndProblem .news{
+           width: 640px;
+       }
+       .newsAndProblem .news li{
+           width: 295px;
+           float: left;
+       }
+       .newsAndProblem .news p{
+           float: left;
+           width: 200px;
+           /* 实现...的效果 */
+           white-space: nowrap;
+           overflow: hidden;
+           text-overflow: ellipsis;
+       }
+       .newsAndProblem .news span{
+           float: right;
+       }
+       .newsAndProblem .news .first{
+           margin-right: 28px;
+       }
+       .newsAndProblem .news a{
+           line-height: 2.5;
+       }
+       .newsAndProblem .news a:hover{
+           color: #e75225;
+       }
+       .newsAndProblem .problem{
+           width: 320px;
+       }
+       .newsAndProblem .problem li{
+           padding-bottom: 20px;
+           padding-top: 15px;
+           line-height: 3;
+           border-bottom: 1px dashed #ccc;
+       }
+       .newsAndProblem .problem li.last{
+           border-bottom:none;
+       }
+       .newsAndProblem .problem .ask, .newsAndProblem .problem .answer{
+           line-height: 2;
+           background-repeat: no-repeat;
+           width: 240px;
+           padding-left: 40px;
+           background-position: left center;;
+       }
+       .newsAndProblem .problem .ask{
+           background-image: url("./images/q(1).jpg");
+           font-size: 16px;
+       }
+       .newsAndProblem .problem .answer{
+           background-image: url("./images/q2.jpg");
+           color: #646464;
+           font-size: 14px;
+       }
+        /* 新闻咨询结束 */
 
 
         /* 主要业务开始 */
@@ -717,21 +809,21 @@
 <body>
     <!-- 顶部栏开始 -->
     <div class="top">
-            <div class="w1000 clearfix">
-                <ul class="fl">
-                    <li><i class="icon-hotline"></i>客服热线：400-050-1889(8:30-21-30)</li>
-                    <li><i class="icon-wx"></i></li>
-                    <li><i class="icon-qq"></i></li>
-                    <li><i class="icon-wb"></i></li>
-                    <li><i class="icon-tb"></i></li>
-                </ul>
-                <ul class="fr">
-                    <li><a href="#"><i class="icon-phone"></i>下载客户端</a></li>
-                    <li><a href="#" class="bk">免费注册</a></li>
-                    <li><a href="#">立即登录</a></li>
-                </ul>
-            </div>
+        <div class="w1000 clearfix">
+            <ul class="fl">
+                <li><i class="icon-hotline"></i>客服热线：400-050-1889(8:30-21-30)</li>
+                <li><i class="icon-wx"></i></li>
+                <li><i class="icon-qq"></i></li>
+                <li><i class="icon-wb"></i></li>
+                <li><i class="icon-tb"></i></li>
+            </ul>
+            <ul class="fr">
+                <li><a href="#"><i class="icon-phone"></i>下载客户端</a></li>
+                <li><a href="#" class="bk">免费注册</a></li>
+                <li><a href="#">立即登录</a></li>
+            </ul>
         </div>
+    </div>
     <!-- 顶部栏结束 -->
 
 
@@ -848,8 +940,68 @@
 
         </div>
         <!-- 主要业务结束 -->
+        <!-- 新闻咨询开始 -->
+        <div class="newsAndProblem w960">
+            <div class="news fl">
+                <h3>新闻咨询 / NEWS</h3>
+                <ul>
+                    <li class="first">
+                        <a href="#"><img src="./images/news1.jpg" width="295" alt=""></a>
+                        <ul>
+                            <li style="list-style-type: disc; color: #ff6537;"><a href="">
+                                    <p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span>
+                                </a></li>
+                            <li style="list-style-type: disc; color: #ff6537;"><a href="">
+                                    <p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span>
+                                </a></li>
+                            <li style="list-style-type: disc; color: #ff6537;"><a href="">
+                                    <p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span>
+                                </a></li>
+                            <li style="list-style-type: disc; color: #ff6537;"><a href="">
+                                    <p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/news2.jpg" width="295" alt=""></a>
+                        <ul>
+                            <li style="list-style-type: disc; color: #ff6537;"><a href="">
+                                    <p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span>
+                                </a></li>
+                            <li style="list-style-type: disc; color: #ff6537;"><a href="">
+                                    <p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span>
+                                </a></li>
+                            <li style="list-style-type: disc; color: #ff6537;"><a href="">
+                                    <p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span>
+                                </a></li>
+                            <li style="list-style-type: disc; color: #ff6537;"><a href="">
+                                    <p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="problem fr">
+                <h3>常见问题 / Q&A</h3>
+                <ul>
+                    <li>
+                        <p class="ask" style="padding-bottom: 10px;">个人征集记录要注重哪些？</p>
+                        <p class="answer">个人信息:姓名，证件类型证件号码</p>
+                    </li>
+                    <li>
+                        <p class="ask" style="padding-bottom: 10px;">银行理财产品该怎么选？</p>
+                        <p class="answer">现在各大银行都推出琳琅满目的王景峰产品，我们该如何选择呢？</p>
+                    </li>
+                    <li class="last">
+                        <p class="ask" style="padding-bottom: 10px;">银行理财产品该怎么选？</p>
+                        <p class="answer">现在各大银行都推出琳琅满目的王景峰产品，我们该如何选择呢？</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 新闻咨询结束 -->
 
-        <!-- 关于我们开始 -->
+        <!-- 关于我们开始开始-->
 
         <div class="guanyuwomen">
             <div class="bb   w960">
@@ -858,7 +1010,7 @@
                 <h3 class="h">公司设在上海，为推动和实现价值增长为经营理念</h3>
             </div>
         </div>
-        <!-- 关于我们结束 -->
+        <!-- 关于我们结束结束 -->
         <!-- 底部开始 -->
         <div class="wraper">
             <!-- 合作机构 start -->
@@ -924,6 +1076,7 @@
                 <p>本站使用<a></a>凡科建站 搭建</p>
             </div>
             <!-- 底部结束 -->
+
         </div>
 </body>
 

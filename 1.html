@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    .newsAndProblem{
+           
+           margin-top: 60px;
+           height: 420px;
+       }
+       .newsAndProblem h3{
+           font-size: 24px;
+           font-weight: bold;
+           text-indent: -8px;
+       }
+       .newsAndProblem .news{
+           width: 640px;
+       }
+       .newsAndProblem .news li{
+           width: 295px;
+           float: left;
+       }
+       .newsAndProblem .news p{
+           float: left;
+           width: 200px;
+           /* 实现...的效果 */
+           white-space: nowrap;
+           overflow: hidden;
+           text-overflow: ellipsis;
+       }
+       .newsAndProblem .news span{
+           float: right;
+       }
+       .newsAndProblem .news .first{
+           margin-right: 28px;
+       }
+       .newsAndProblem .news a{
+           line-height: 2.5;
+       }
+       .newsAndProblem .news a:hover{
+           color: #e75225;
+       }
+       .newsAndProblem .problem{
+           width: 320px;
+       }
+       .newsAndProblem .problem li{
+           padding-bottom: 20px;
+           padding-top: 15px;
+           line-height: 3;
+           border-bottom: 1px dashed #ccc;
+       }
+       .newsAndProblem .problem li.last{
+           border-bottom:none;
+       }
+       .newsAndProblem .problem .ask, .newsAndProblem .problem .answer{
+           line-height: 2;
+           background-repeat: no-repeat;
+           width: 240px;
+           padding-left: 40px;
+           background-position: left center;;
+       }
+       .newsAndProblem .problem .ask{
+           background-image: url("./images/q(1).jpg");
+           font-size: 16px;
+       }
+       .newsAndProblem .problem .answer{
+           background-image: url("./images/q2.jpg");
+           color: #646464;
+           font-size: 14px;
+       }
+       
+    </style>
+</head>
+<body>
+        <div class="newsAndProblem w960">
+                <div class="news fl">
+                   <h3>新闻咨询 / NEWS</h3>
+                   <ul>
+                       <li class="first">
+                           <a href="#"><img src="./images/news1.jpg" width="295" alt=""></a>
+                           <ul>
+                               <li style="list-style-type: disc; color: #ff6537;"><a href=""><p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span></a></li>
+                               <li style="list-style-type: disc; color: #ff6537;"><a href=""><p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span></a></li>
+                               <li style="list-style-type: disc; color: #ff6537;"><a href=""><p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span></a></li>
+                               <li style="list-style-type: disc; color: #ff6537;"><a href=""><p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span></a></li>
+                           </ul>
+                       </li>
+                       <li>
+                           <a href="#"><img src="./images/news2.jpg" width="295" alt=""></a>
+                           <ul>
+                               <li style="list-style-type: disc; color: #ff6537;"><a href=""><p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span></a></li>
+                               <li style="list-style-type: disc; color: #ff6537;"><a href=""><p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span></a></li>
+                               <li style="list-style-type: disc; color: #ff6537;"><a href=""><p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span></a></li>
+                               <li style="list-style-type: disc; color: #ff6537;"><a href=""><p>国资委：疫情影响是阶段性暂时性的 疫情动态</p><span>2020-02-18</span></a></li>
+                           </ul>
+                       </li>
+                   </ul>
+                </div>
+                <div class="problem fr">
+                   <h3>常见问题 / Q&A</h3>
+                   <ul>
+                       <li>
+                           <p class="ask" style="padding-bottom: 10px;">个人征集记录要注重哪些？</p>
+                           <p class="answer">个人信息:姓名，证件类型证件号码</p>
+                       </li>
+                       <li>
+                           <p class="ask" style="padding-bottom: 10px;">银行理财产品该怎么选？</p>
+                           <p class="answer">现在各大银行都推出琳琅满目的王景峰产品，我们该如何选择呢？</p>
+                       </li>
+                       <li class="last">
+                           <p class="ask" style="padding-bottom: 10px;">银行理财产品该怎么选？</p>
+                           <p class="answer">现在各大银行都推出琳琅满目的王景峰产品，我们该如何选择呢？</p>
+                       </li>
+                   </ul>
+                </div>
+            </div>
+</body>
+</html>
