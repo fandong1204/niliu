@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 顶部栏开始 */
+        .w1000{
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+        body{
+            color: #666;
+            font: normal normal 16px/1 "微软雅黑";
+        }
+        .clearfix:after{
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .top{
+            height: 29px;
+            line-height: 29px;
+            border: 1px solid #e9e9e9;
+            font-size: 14px;
+        }
+        .top .fl li{
+            display: inline;
+            margin-right: 18px;
+        }
+        .top .fr li{
+            display: inline;
+            margin-right: 18px;
+            float: left;
+        }
+        .top .fl .icon-xtb{
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            display: inline-block;
+            background: url("./images/index-sp1.png") no-repeat -5px -5px;
+        }
+        
+        /* 顶部栏结束 */
+        /* TOP开始 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        body {
+            font: normal normal 16px/1.5 arial;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: normal;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .w960 {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .logo {
+            background-color: #e65224;
+            height: 73px;
+            padding-top: 35px;
+        }
+
+        .logo ul {
+            overflow: hidden;
+        }
+
+        .logo ul p {
+            color: #fff;
+        }
+
+        .logo ul p:hover {
+            color: brown;
+            cursor: pointer;
+        }
+
+        .logo ul h1 a {
+            display: block;
+            width: 182px;
+            height: 45px;
+            text-indent: -999px;
+            background: url("../images/logo.png") no-repeat;
+            padding-right: 15px;
+        }
+
+        .logo .w960 .fr .fr {
+            padding-left: 15px;
+        }
+
+        /* top结束 */
+
+
+
+
+        /* 首页开始 */
+
+
+        .wraper .shou {
+            height: 80px;
+        }
+
+        .wraper .shouyebiaotou li {
+            display: inline-block;
+            margin-right: 80px;
+            font-size: 20px;
+            color: #4d4d4d;
+            line-height: 80px;
+            cursor: pointer;
+        }
+
+        .wraper .shouyebiaotou li:hover {
+            color: #e75225;
+        }
+
+        .wraper .shou .shouyebiaotou .ye {
+            text-indent: 1em;
+            color: #e75225;
+        }
+
+
+        /* 首页结束 */
+
+
+
+        /* 稳定收益开始 */
+        .wraper .sangetu {
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .wraper .sangetu .wen1 {
+            float: left;
+            margin-top: 20px;
+            margin-right: 130px;
+
+        }
+
+        .wraper .sangetu .wen1 dl {
+            display: inline-block;
+            width: 148px;
+            line-height: 30px;
+            margin-left: 5px;
+        }
+
+        .wraper .sangetu .wen1 dl dt {
+            font-size: 17px;
+            font-weight: bold;
+
+        }
+
+        .wraper .sangetu .wen1 dl dd {
+            font-size: 13px;
+        }
+
+        .wraper .sangetu .wen1 dl dt:hover {
+            color: #e65224;
+        }
+
+        .wraper .sangetu .wen1 dl dd:hover {
+            color: #e65224;
+        }
+
+        .wraper .sangetu .wen2 {
+            float: left;
+            margin-top: 20px;
+
+        }
+
+        .wraper .sangetu .wen2 dl {
+            display: inline-block;
+            width: 148px;
+            line-height: 30px;
+            margin-left: 5px;
+        }
+
+        .wraper .sangetu .wen2 dl dt {
+            font-size: 17px;
+            font-weight: bold;
+
+        }
+
+        .wraper .sangetu .wen2 dl dd {
+            font-size: 13px;
+        }
+
+        .wraper .sangetu .wen2 dl dt:hover {
+            color: #e65224;
+        }
+
+        .wraper .sangetu .wen2 dl dd:hover {
+            color: #e65224;
+        }
+
+        .wraper .sangetu .wen3 {
+            float: right;
+            margin-top: 20px;
+        }
+
+        .wraper .sangetu .wen3 dl {
+            display: inline-block;
+            width: 148px;
+            line-height: 30px;
+            margin-left: 5px;
+        }
+
+        .wraper .sangetu .wen3 dl dt {
+            font-size: 17px;
+            font-weight: bold;
+
+        }
+
+        .wraper .sangetu .wen3 dl dd {
+            font-size: 13px;
+        }
+
+        .wraper .sangetu .wen3 dl dt:hover {
+            color: #e65224;
+        }
+
+        .wraper .sangetu .wen3 dl dd:hover {
+            color: #e65224;
+        }
+
+        /* 稳定收益结束 */
+
+
+
+
+        /* 主要业务开始 */
+        .wraper .zhu {
+            overflow: hidden;
+        }
+
+        .wraper .zhu h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .wraper .zhu .tu1 {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .wraper .zhu .tu1 h2 {
+            color: #ff6537;
+            padding: 15px 0 15px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu1 p {
+            width: 210px;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu1 span {
+            width: 102px;
+            height: 40px;
+            background-color: #4d4d4d;
+
+            color: #ededc8;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu1 span:hover {
+            color: #e65224;
+        }
+
+        .wraper .zhu .tu2 {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .wraper .zhu .tu2 h2 {
+            color: #ff6537;
+            padding: 15px 0 15px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu2 p {
+            width: 210px;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu2 span {
+            width: 102px;
+            height: 40px;
+            background-color: #4d4d4d;
+
+            color: #ededc8;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu2 span:hover {
+            color: #e65224;
+        }
+
+        .wraper .zhu .tu3 {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .wraper .zhu .tu3 h2 {
+            color: #ff6537;
+            padding: 15px 0 15px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu3 p {
+            width: 210px;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu3 span {
+            width: 102px;
+            height: 40px;
+            background-color: #4d4d4d;
+
+            color: #ededc8;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu3 span:hover {
+            color: #e65224;
+        }
+
+        .wraper .zhu .tu4 {
+            float: right;
+        }
+
+        .wraper .zhu .tu4 h2 {
+            color: #ff6537;
+            padding: 15px 0 15px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu4 p {
+            width: 210px;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu4 span {
+            width: 102px;
+            height: 40px;
+            background-color: #4d4d4d;
+
+            color: #ededc8;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .wraper .zhu .tu4 span:hover {
+            color: #e65224;
+        }
+
+
+        /* 主要业务结束 */
+
+
+        /* 关于我们开始 */
+        .wraper .guanyuwomen {
+            margin-top: 60px;
+        }
+
+        .wraper .guanyuwomen .bb {
+            background: url("../images/about.jpg");
+        }
+
+        .wraper .guanyuwomen .bb h1,
+        h2,
+        h3 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .wraper .guanyuwomen .bb h1 {
+            padding: 29px 0 27px;
+
+        }
+
+        .wraper .guanyuwomen .bb .l {
+            margin-bottom: 20px;
+        }
+
+        .wraper .guanyuwomen .bb .h {
+            padding: 0 0 36px 0;
+
+        }
+
+
+
+
+        /* 关于我们结束 */
+
+
+
+
+
+
+
+        /* 底部开始 */
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        body {
+            font: normal normal 16px/1.5 "微软雅黑";
+        }
+
+        /* h1,
+        h2,
+        h3 {
+            font-weight: 
+        } */
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #e65225;
+        }
+
+        .w960 {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .part {
+            background-color: #f6f6f6;
+            height: 330px;
+        }
+
+        .partner p {
+            padding-top: 50px;
+            font-size: 18px;
+            color: #666666;
+            text-align: left;
+        }
+
+        .partner .ul1 {
+            margin-top: 50px;
+        }
+
+        .partner .ul2 {
+            margin-top: 20px;
+        }
+
+        .p1,
+        .p2,
+        .p3,
+        .p4,
+        .p5,
+        .p6,
+        .p7,
+        .p8,
+        .p9,
+        .p10 {
+            display: inline-block;
+            width: 116px;
+            height: 34px;
+            background: url("../images/index_sp.png") no-repeat;
+            padding-left: 55px;
+        }
+
+        .p1 {
+            background-position: 0px 0px;
+        }
+
+        .p2 {
+            background-position: 0px -224px;
+        }
+
+        .p3 {
+            background-position: 0px -283px;
+        }
+
+        .p4 {
+            background-position: 0px -224px;
+        }
+
+        .p5 {
+            background-position: 0px -62px;
+        }
+
+        .p6 {
+            background-position: 0px -498px;
+        }
+
+        .p7 {
+            background-position: 0px -173px;
+        }
+
+        .p8 {
+            background-position: 0px -116px;
+        }
+
+        .p9 {
+            background-position: 0px -336px;
+        }
+
+        .p10 {
+            background-position: 0px -388px;
+        }
+
+        .footer {
+            background-color: #2c2c2c;
+            color: #90937b;
+            height: 230px;
+        }
+
+
+        .foot1 {
+
+            margin-left: 300px;
+            padding-top: 50px;
+        }
+
+        .foot1 ul {
+            list-style-type: none;
+            float: left;
+            font-size: 12px;
+        }
+
+        .f1 {
+            padding-left: 74px;
+        }
+
+        .f2 {
+            padding-left: 88px;
+        }
+
+        .f3 {
+            padding-left: 59px;
+        }
+
+        .fsize14 {
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+
+        .wx,
+        .qq,
+        .wb,
+        .tb {
+            display: inline-block;
+            width: 42px;
+            height: 48px;
+            background: url("../images/index_sp.png") no-repeat;
+        }
+
+        .wx {
+            background-position: -172px 0;
+            padding-right: 10px;
+        }
+
+        .qq {
+            background-position: -228px 0;
+            padding-right: 10px;
+        }
+
+        .wb {
+            background-position: -286px 0;
+            padding-right: 10px;
+        }
+
+        .tb {
+            background-position: -343px 0;
+        }
+
+        .foot2 {
+            font-size: 12px;
+            line-height: 1.5;
+            padding-top: 10px;
+            text-align: center;
+            color: #666666;
+            background-color: #2c2c2c;
+            border-top: 2px dashed #666666;
+            height: 58px;
+        }
+
+
+        /* 底部结束 */
+    </style>
+</head>
+
+<body>
+    <!-- 顶部栏开始 -->
+    <div class="top">
+        <div class="w1000 clearfix">
+            <ul class="fl">
+                <li><i class="icon-xtb"></i>客服热线：400-050-1889（8：30-21：30）</li>
+                <li class="icon-wx"></li>
+                <li class="icon-qq"></li>
+                <li class="icon-wb"></li>
+                <li class="icon-tb"></li>
+            </ul>
+            <ul class="fr">
+                <li><a href=""><i class="icon-phone"></i>下载客户端</a></li>
+                <li><a href="" class="bk">免费注册</a></li>
+                <li><a href="">立即注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部栏结束 -->
+
+
+    <div class="wraper">
+        <!-- 大框架 -->
+        <!-- 利牛top开始 -->
+        <div class="logo">
+            <ul class="w960">
+                <li class="fl">
+                    <h1>
+                        <a href="">犁牛网</a>
+                    </h1>
+
+                <li class="fr">
+                    <img class="fl" src="../images/phone.png" alt="电话">
+                    <div class="fr">
+                        <p>财富热线</p>
+                        <p>123456789</p>
+
+                    </div>
+
+
+            </ul>
+        </div>
+        <!-- 利牛top结束 -->
+
+
+
+        <!-- 首页表头开始 -->
+        <div class="shou">
+            <div class="w960">
+                <ul class="shouyebiaotou">
+                    <li class="ye">首页</li>
+                    <li>关于利牛</li>
+                    <li>行业资讯</li>
+                    <li>主要业务</li>
+                    <li>安全保障</li>
+
+                </ul>
+
+            </div>
+        </div>
+        <!-- 一张轮播图 -->
+        <div class="w960">
+            <img src="../images/bigAdvimg.png" alt="">
+
+        </div>
+
+        <!-- 首页表头结束 -->
+
+        <!-- 稳定收益开始 -->
+        <div class="sangetu">
+            <div class="w960">
+                <div class="wen1">
+                    <img src="../images/promise1.png" alt="">
+                    <dl>
+                        <dt>稳定高收益</dt>
+                        <dd>40倍银行活期存款利息100元起投，交易0手续费</dd>
+                    </dl>
+                </div>
+                <div class="wen2">
+                    <img src="../images/promise2.png" alt="">
+                    <dl>
+                        <dt>稳定高收益</dt>
+                        <dd>40倍银行活期存款利息100元起投，交易0手续费</dd>
+                    </dl>
+                </div>
+                <div class="wen3">
+                    <img src="../images/promise3.png" alt="">
+                    <dl>
+                        <dt>稳定高收益</dt>
+                        <dd>40倍银行活期存款利息100元起投，交易0手续费</dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 稳定收益结束 -->
+
+
+        <!-- 主要业务开始 -->
+
+
+        <div class="zhu">
+            <div class="w960">
+                <h1>主要业务</h1>
+                <div class="tu1">
+                    <img src="../images/business1.png" alt="">
+                    <h2>投资业务</h2>
+                    <p>通过发行基金单位，集中投资者的基金，由基金管理人管理和利用资金</p>
+                    <span>立即咨询>></span>
+                </div>
+                <div class="tu2">
+                    <img src="../images/business2.png" alt="">
+                    <h2>理财增值</h2>
+                    <p>通过发行基金单位，集中投资者的基金，由基金管理人管理和利用资金</p>
+                    <span>立即咨询>></span>
+                </div>
+                <div class="tu3">
+                    <img src="../images/business3.png" alt="">
+                    <h2>信托服务</h2>
+                    <p>通过发行基金单位，集中投资者的基金，由基金管理人管理和利用资金</p>
+                    <span>立即咨询>></span>
+                </div>
+                <div class="tu4">
+                    <img src="../images/business4.png" alt="">
+                    <h2>产品代理</h2>
+                    <p>通过发行基金单位，集中投资者的基金，由基金管理人管理和利用资金</p>
+                    <span>立即咨询>></span>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- 主要业务结束 -->
+
+        <!-- 关于我们开始 -->
+
+        <div class="guanyuwomen">
+            <div class="bb   w960">
+                <h1>关于我们</h1>
+                <h3 class="l">利牛金融有限公司是成立于1991年5yue13日成立的艾红保险公司的基础上组建而成的金融集团</h3>
+                <h3 class="h">公司设在上海，为推动和实现价值增长为经营理念</h3>
+            </div>
+        </div>
+        <!-- 关于我们结束 -->
+        <!-- 底部开始 -->
+        <div class="wraper">
+            <!-- 合作机构 start -->
+            <div class="part">
+                <div class="partner w960">
+                    <p>合作机构</p>
+                    <ul class="ul1">
+                        <li class="p1"><a href=""></a></li>
+                        <li class="p2"><a href=""></a></li>
+                        <li class="p3"><a href=""></a></li>
+                        <li class="p4"><a href=""></a></li>
+                        <li class="p5"><a href=""></a></li>
+                    </ul>
+                    <ul class="ul2">
+                        <li class="p6"><a href=""></a></li>
+                        <li class="p7"><a href=""></a></li>
+                        <li class="p8"><a href=""></a></li>
+                        <li class="p9"><a href=""></a></li>
+                        <li class="p10"><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="foot1 w960">
+                    <ul>
+                        <li class="fsize14">联系我们</li>
+                        <li style="line-height: 24px;">地址：广州市珠海区苏州街18号F栋3单元3A02</li>
+                        <li style="line-height: 24px;">邮编：510000</li>
+                        <li style="line-height: 24px;">邮件2383003879@qq.com </li>
+                    </ul>
+                    <ul class="f1">
+                        <li style="font-size: 14px;">客服热线</li>
+                        <li style="font-size: 18px; line-height: 36px;">18825039863</li>
+                        <li>(工作时间 9：00-21：00)</li>
+                        <li>
+                            <div>
+                                <a href=" " class="wx"></a>
+                                <a href=" " class="qq"></a>
+                                <a href=" " class="wb"></a>
+                                <a href=" " class="tb"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="f2">
+                        <li class="fsize14">商家服务</li>
+                        <li>商家入驻</li>
+                        <li>培训中心</li>
+                        <li>广告服务</li>
+                        <li>服务市场</li>
+                    </ul>
+                    <ul class="f3">
+                        <li class="fsize14">帮助信息</li>
+                        <li>帮助中心</li>
+                        <li>赎回投资</li>
+                        <li>新手指引</li>
+                        <li>安全保障</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot2">
+                <p>@2016 利牛金融有限公司 版权所有</p>
+                <p>本站使用<a></a>凡科建站 搭建</p>
+            </div>
+            <!-- 底部结束 -->
+        </div>
+</body>
+
+
+
+</body>
+
+</html>
