@@ -53,6 +53,79 @@
             display: inline-block;
             background: url("./images/index-sp1.png") no-repeat -6px -33px;
         }
+        .top{
+    height: 29px;
+    
+    line-height: 29px;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 14px;
+}
+.top .fl li{
+    float: left;
+    margin-right: 18px;
+}
+.top .fr li{
+    float: left;
+    margin-right: 18px;
+}
+.top .fl .icon-hotline{
+   
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    
+    vertical-align: middle;
+   
+    background: url("../images/index-sp1.png") no-repeat -5px -5px;
+}
+
+.icon-wx, .icon-qq, .icon-wb, .icon-tb{
+   
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background: url("../images/index-sp1.png") no-repeat -5px -5px;
+}
+.icon-wx{
+    background-position: -6px -36px;
+}
+.icon-wx:hover{
+    background-position: -47px -36px;
+}
+
+.icon-qq{
+    background-position: -6px -64px;
+}
+.icon-qq:hover{
+    background-position: -47px -64px;
+}
+
+.icon-wb{
+    background-position: -6px -94px;
+}
+.icon-wb:hover{
+    background-position: -47px -94px;
+}
+
+.icon-tb{
+    background-position: -6px -124px;
+}
+.icon-tb:hover{
+    background-position: -47px -124px;
+}
+.fr li a{
+    color: #666;
+}
+.top .fr .bk{
+    border-right: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    width: 5px;
+    height: 5px;
+    padding: 0 13px;
+}
+
         /* 顶部栏结束 */
         /* TOP开始 */
         * {
@@ -644,21 +717,21 @@
 <body>
     <!-- 顶部栏开始 -->
     <div class="top">
-        <div class="w1000 clearfix">
-            <ul class="fl">
-                <li><i class="icon-xtb"></i>客服热线：400-050-1889（8：30-21：30）</li>
-                <li class="icon-wx"></li>
-                <li class="icon-qq"></li>
-                <li class="icon-wb"></li>
-                <li class="icon-tb"></li>
-            </ul>
-            <ul class="fr">
-                <li><a href=""><i class="icon-phone"></i>下载客户端</a></li>
-                <li><a href="" class="bk">免费注册</a></li>
-                <li><a href="">立即注册</a></li>
-            </ul>
+            <div class="w1000 clearfix">
+                <ul class="fl">
+                    <li><i class="icon-hotline"></i>客服热线：400-050-1889(8:30-21-30)</li>
+                    <li><i class="icon-wx"></i></li>
+                    <li><i class="icon-qq"></i></li>
+                    <li><i class="icon-wb"></i></li>
+                    <li><i class="icon-tb"></i></li>
+                </ul>
+                <ul class="fr">
+                    <li><a href="#"><i class="icon-phone"></i>下载客户端</a></li>
+                    <li><a href="#" class="bk">免费注册</a></li>
+                    <li><a href="#">立即登录</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
     <!-- 顶部栏结束 -->
 
 
